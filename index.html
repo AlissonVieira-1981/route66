@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega Route66</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+    <div class="header">
+        <img src="./assets/imgroute66.jpg" alt="logo-route" class="logo-route">
+        <a>Home</a>
+        <a>Reserva</a>
+        <a>Cardápio</a>
+        <a>Voucher</a>
+        <a>Fale Conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+
+            <p><em>"Deguste a tradição, celebre o requinte. Bebidas excepcionais para experiências inesquecíveis."</em></p>
+
+            <button onclick="mostrarform()">Faça sua Reserva</button>
+
+        </div>
+
+        <div>
+            <img src="./assets/img-waiter1.jpeg" alt="img-waiter" class="img-waiter">
+        </div>
+
+    </div>
+    <div class="caixa-fundo">
+        <img src="./assets/fundo route66.png" alt="fundo route66" class="fundo-route66">
+        <div class="mascara"></div>
+    </div>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5512982563607&text=ol%C3%A1,%20entre%20em%20contato"
+        class="link-de-whatsapp">
+        <img src="./assets/logo-wats.jpg" alt="logo whatsapp">
+
+    </a>
+
+    <form class="formulário-fale-conosco" action="https://formcarry.com/s/FI-YSAwlH9h" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="Nome">
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Deixe sua mensagem" name="dúvida"></textarea>
+
+        <Button type="submit">Enviar Mensagem</Button>
+
+    </form>
+
+</body>
+
+<script src="myscript.js"></script>
+
+
+</html>
