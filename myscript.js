@@ -15,3 +15,28 @@ function esconderform() {
     mascara.style.visibility = "hidden"
 
 }
+
+function mostrarImagem() {
+    document.getElementById("imagem").style.display = "block";
+}
+
+document.addEventListener("click", function(event) {
+    let imagem = document.getElementById("imagem");
+    
+    // Verifica se o clique foi fora da imagem
+    if (imagem.style.display === "block" && !imagem.contains(event.target) && event.target.tagName !== "BUTTON") {
+        imagem.style.display = "none";
+    }
+        setTimeout(function() {
+        imagem.style.display = "none";
+    }, 7000);
+}
+
+);
+
+
+
+
+
+
+

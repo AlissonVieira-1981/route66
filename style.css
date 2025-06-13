@@ -26,7 +26,65 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 30px;
+}
 
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 400px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(250, 249, 249);
+    background-color: #e908267e;
+    border-radius: 13px;
+    border: none;
+    width: 400px;
+    height: 90px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#imagem {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 18%;
+    left: 26%;
+    border-radius: 50%;
+
+
+
+    height: auto;
+    z-index: 10;
+    /* Garante que ela fique sobre o fundo */
+
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.add-button {
+    animation: pisca 5s infinite;
+}
+
+.add-button:active {
+    transform: scale(1.2);
 }
 
 
@@ -82,10 +140,10 @@ body {
     border-radius: 80px;
 }
 
-.img-waiter{
+.img-waiter {
     height: 280px;
     border-radius: 90px;
-    
+
 }
 
 
@@ -107,7 +165,7 @@ body {
     color: white;
     font-size: 26px;
     cursor: pointer;
-   }
+}
 
 .header a:hover {
     color: red;
@@ -165,6 +223,3 @@ textarea {
     transition: visibility 2s ease-in-out;
 
 }
-
-
-
