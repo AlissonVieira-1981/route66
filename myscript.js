@@ -34,6 +34,19 @@ document.addEventListener("click", function(event) {
 
 );
 
+function mostrarImagem(id) {
+    var imagem = document.getElementById(id);
+    if (imagem.style.display === "none" || imagem.style.display === "") {
+        imagem.style.display = "block";
+    } else {
+        imagem.style.display = "none";
+    }
+
+    
+}
+
+
+
 
 
 
